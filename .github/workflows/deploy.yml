@@ -54,14 +54,14 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
-      - name: Push Docker Image to ECR
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: microeks
-          IMAGE_TAG: latest
-        run: |
-          docker image tag microeks 637423430820.dkr.ecr.us-east-1.amazonaws.com/microeks:latest
-          docker push 637423430820.dkr.ecr.us-east-1.amazonaws.com/microeks:latest
+      # - name: Push Docker Image to ECR
+      #   env:
+      #     ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+      #     ECR_REPOSITORY: microeks
+      #     IMAGE_TAG: latest
+      #   run: |
+      #     docker image tag microeks 637423430820.dkr.ecr.us-east-1.amazonaws.com/microeks:latest
+      #     docker push 637423430820.dkr.ecr.us-east-1.amazonaws.com/microeks:latest
 
       - name: Set Up kubectl
         run: |
