@@ -27,8 +27,8 @@ jobs:
       - name: Make mvnw Executable
         run: chmod +x mvnw
 
-      - name: Build Application and Docker Image
-        run: ./mvnw -Pprod verify jib:dockerBuild -DskipTests -Dmaven.javadoc.skip=true -DskipITs -C
+      # - name: Build Application and Docker Image
+        # run: ./mvnw -Pprod verify jib:dockerBuild -DskipTests -Dmaven.javadoc.skip=true -DskipITs -C
 
       - name: Verify Dockerfile
         run: |
@@ -65,7 +65,7 @@ jobs:
 
       - name: Set Up kubectl
         run: |
-          aws eks update-kubeconfig --region us-east-1 --name ${{ secrets.EKS_CLUSTER_NAME }} --role-arn ${{ secrets.AWS_ROLE_ARN }}
+          aws eks update-kubeconfig --region us-east-1 --name ${{ secrets.EKS_CLUSTER_NAME }}
           kubectl config use-context arn:aws:eks:us-east-1:637423430820:cluster/${{ secrets.EKS_CLUSTER_NAME }}
           kubectl config current-context
 
