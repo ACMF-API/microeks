@@ -6,7 +6,6 @@ metadata:
   labels:
     app: microeks
 spec:
-  type: LoadBalancer
   selector:
     app: microeks
   type: LoadBalancer
