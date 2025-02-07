@@ -1,0 +1,27 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "baseName": "microeks",
+    "buildTool": "maven",
+    "cacheProvider": "ehcache",
+    "clientFramework": "react",
+    "clientPackageManager": null,
+    "clientTheme": null,
+    "creationTimestamp": 1738911649037,
+    "databaseType": "sql",
+    "enableHibernateCache": false,
+    "enableTranslation": true,
+    "entities": [],
+    "jhipsterVersion": "8.8.0",
+    "jwtSecretKey": "NmE2ODg2MGMwMmRjMDQ1YTVmY2NlNWVlMzQzYzc5MWYzMzgwNWY4MGE5MmE0NWNiMmI5OGIwYWEzNGZjNjc3ZWRhMTZkZTdkZDdhMGI4ZmM3NWQ1MzRkYTZkN2JkOTI5M2FlZDU0MGNkMjc0NTAzNmFkZDY2NzgwNTI1ODM0ZDc=",
+    "languages": ["en"],
+    "microfrontend": false,
+    "nativeLanguage": "en",
+    "otherLanguages": null,
+    "prodDatabaseType": "mysql",
+    "reactive": false,
+    "serviceDiscoveryType": null,
+    "testFrameworks": ["cypress", "gatling"],
+    "websocket": null
+  }
+}

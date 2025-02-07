@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "appsFolders": ["microeks"],
+    "dbRandomPassword": "587fd8c9681efb34a140e4967721eb641a00e5e64d4b7874a460e51732d9",
+    "deploymentApplicationType": "monolith",
+    "directoryPath": "../../",
+    "dockerPushCommand": "docker push",
+    "dockerRepositoryName": "",
+    "ingressDomain": null,
+    "ingressType": null,
+    "jhipsterVersion": "8.7.1",
+    "jwtSecretKey": "NjY0N2Y2ZDZkZmQ5YmFlZmQ3MTJjNWY4NTJmY2I4MTU1OWM2M2ViODRjYjhmOTJiNzIwMjMyMDY1NzYwOWI0YTlmZDA3YjQ1Zjc2YzZkZjYxYTA5NTVmNTU1YzNiNjk5NDg0Mg==",
+    "kubernetesNamespace": "default",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesStorageClassName": null,
+    "kubernetesUseDynamicStorage": false,
+    "monitoring": "no",
+    "serviceDiscoveryType": "no"
+  }
+}

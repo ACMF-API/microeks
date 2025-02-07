@@ -1,0 +1,12 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+resources:
+  # Individual apps
+  - microeks-k8s/microeks-deployment.yml
+  - microeks-k8s/microeks-service.yml
+  - microeks-k8s/microeks-mysql.yml
+  - microeks-k8s/jwt-secret.yml
+# service discovery eureka/consul
+
+patchesJson6902:
